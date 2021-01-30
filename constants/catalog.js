@@ -2,8 +2,7 @@ const catalog = [
   {
     id: 1,
     title: 'Asus GeForce RTX 3070 DUAL OC',
-    img:
-      'https://github.com/frostnn/catalog-js/blob/main/img/Asus GeForce RTX 3070 DUAL OC.jpg?raw=true',
+    img: 'img/AsusGeForceRTX3070DUALOC1.png',
     price: '1258',
   },
   {
@@ -30,8 +29,7 @@ const catalog = [
   {
     id: 5,
     title: 'Gigabyte GeForce RTX 3070 GAMING OC 8G',
-    img:
-      'https://github.com/frostnn/catalog-js/blob/main/img/GigabyteGeForceRTX3070GAMINGOC8G.jpg?raw=true',
+    img: 'img/GigabyteGeForceRTX3070GAMINGOC8G.jpg',
     price: '1521',
   },
   {
@@ -52,7 +50,7 @@ const catalog = [
     id: 8,
     title: 'MSI GeForce RTX 3090 GAMING X TRIO',
     img:
-      'https://github.com/frostnn/catalog-js/blob/main/img/MSI eForceRTX3090GAMINGXTRIO.jpg?raw=true',
+      'https://github.com/frostnn/catalog-js/blob/main/img/MSIGeForceRTX3090GAMINGXTRIO.jpg?raw=true',
     price: '2688',
   },
   {

@@ -8,6 +8,16 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.7;
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: 'Baloo Paaji 2', cursive;
   background-color: $light;
+}
+
+.catalog-item {
+  background-color: #222831;
+  color: $light;
+  &_img {
+    img {
+      max-width: 100%;
+    }
+  }
 }
