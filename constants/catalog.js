@@ -1,74 +1,86 @@
 const catalog = [
   {
     id: 1,
-    name: 'Asus GeForce RTX 3070 DUAL OC',
-    img: '../img/Asus GeForce RTX 3070 DUAL OC.jpg',
+    title: 'Asus GeForce RTX 3070 DUAL OC',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/Asus GeForce RTX 3070 DUAL OC.jpg?raw=true',
     price: '1258',
   },
   {
     id: 2,
-    name: 'Asus GeForce RTX 3090 ROG STRIX OC',
-    img: '../img/AsusGeForceRTX3090ROGSTRIXOC.jpg',
+    title: 'Asus GeForce RTX 3090 ROG STRIX OC',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/AsusGeForceRTX3090ROGSTRIXOC.jpg?raw=true',
     price: '3147',
   },
   {
     id: 3,
-    name: 'Asus GeForce RTX 3090 TURBO',
-    img: '../img/AsusGeForceRTX3090TURBO.jpg',
+    title: 'Asus GeForce RTX 3090 TURBO',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/AsusGeForceRTX3090TURBO.jpg?raw=true',
     price: '2617',
   },
   {
     id: 4,
-    name: 'Gigabyte GeForce RTX 3070 EAGLE OC 8G',
-    img: '../img/GigabyteGeForceRTX3070EAGLEOC8G.jpg',
+    title: 'Gigabyte GeForce RTX 3070 EAGLE OC 8G',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/GigabyteGeForceRTX3070EAGLEOC8G.jpg?raw=true',
     price: '1272',
   },
   {
     id: 5,
-    name: 'Gigabyte GeForce RTX 3070 GAMING OC 8G',
-    img: '../img/GigabyteGeForceRTX3070GAMINGOC8G.jpg',
+    title: 'Gigabyte GeForce RTX 3070 GAMING OC 8G',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/GigabyteGeForceRTX3070GAMINGOC8G.jpg?raw=true',
     price: '1521',
   },
   {
     id: 6,
-    name: 'Gigabyte GeForce RTX 3070 VISION OC 8G',
-    img: '../GigabyteGeForceRTX3070VISIONOC8G.jpg',
+    title: 'Gigabyte GeForce RTX 3070 VISION OC 8G',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/GigabyteGeForceRTX3070VISIONOC8G.jpg?raw=true',
     price: '1419',
   },
   {
     id: 7,
-    name: 'MSI GeForce RTX 3070 VENTUS 2X OC',
-    img: '../MSIGeForceRTX3070VENTUS2XOC.jpg',
+    title: 'MSI GeForce RTX 3070 VENTUS 2X OC',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/MSIGeForceRTX3070VENTUS2XOC.jpg?raw=true',
     price: '1481',
   },
   {
     id: 8,
-    name: 'MSI GeForce RTX 3090 GAMING X TRIO',
-    img: '../MSI eForceRTX3090GAMINGXTRIO.jpg',
+    title: 'MSI GeForce RTX 3090 GAMING X TRIO',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/MSI eForceRTX3090GAMINGXTRIO.jpg?raw=true',
     price: '2688',
   },
   {
     id: 9,
-    name: 'MSI GeForce RTX 3090 VENTUS 3X 24G OC',
-    img: '../MSIGeForceRTX3090VENTUS3X24GOC.jpg',
+    title: 'MSI GeForce RTX 3090 VENTUS 3X 24G OC',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/MSIGeForceRTX3090VENTUS3X24GOC.jpg?raw=true',
     price: '2528',
   },
   {
     id: 10,
-    name: 'Palit GeForce RTX 3070 GameRock',
-    img: '../PalitGeForceRTX3070GameRock.jpg',
+    title: 'Palit GeForce RTX 3070 GameRock',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/PalitGeForceRTX3070GameRock.jpg?raw=true',
     price: '3016',
   },
   {
     id: 11,
-    name: 'Palit GeForce RTX 3070 GamingPro',
-    img: '../PalitGeForceRTX3070GamingPro.jpg',
+    title: 'Palit GeForce RTX 3070 GamingPro',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/PalitGeForceRTX3070GamingPro.jpg?raw=true',
     price: '2806',
   },
   {
     id: 12,
-    name: 'Palit GeForce RTX 3070 JetStream',
-    img: '../PalitGeForceRTX3070JetStream.jpg',
+    title: 'Palit GeForce RTX 3070 JetStream',
+    img:
+      'https://github.com/frostnn/catalog-js/blob/main/img/PalitGeForceRTX3070JetStream.jpg?raw=true',
     price: '1232',
   },
 ];
