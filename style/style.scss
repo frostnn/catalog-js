@@ -1,4 +1,7 @@
-$light: #f8f9fa;
+$dark: #222831;
+$blue: #0a4870;
+$grey: #f0f0f0;
+$orange: #f2620f;
 
 * {
   box-sizing: border-box;
@@ -9,15 +12,138 @@ body {
   padding: 0;
   line-height: 1.7;
   font-family: 'Baloo Paaji 2', cursive;
-  background-color: $light;
 }
 
 .catalog-item {
-  background-color: #222831;
-  color: $light;
+  transition: transform 0.5s;
+  background-color: $grey;
+  color: $blue;
+  border-radius: 5px;
+  padding: 20px;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
   &_img {
+    height: 200px;
     img {
       max-width: 100%;
     }
   }
+  &_title {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  &_wrapper-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .fas {
+      font-size: 22px;
+    }
+  }
+  &_price {
+    color: $orange;
+    font-size: 26px;
+    font-weight: 600;
+  }
 }
+.catalog-item:focus,
+.catalog-item:hover {
+  transform: scale3d(1.006, 1.006, 1);
+}
+.catalog-item:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 10px;
+  content: '';
+  opacity: 0;
+  z-index: -1;
+}
+.catalog-item:hover::after,
+.catalog-item:focus::after {
+  opacity: 1;
+}
+.draw-border {
+  box-shadow: inset 0 0 0 3px $blue;
+  color: $blue;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+}
+
+.draw-border::after {
+  border-top-width: 3px;
+  border-right-width: 3px;
+}
+
+.draw-border:hover {
+  color: $orange;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: $orange;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* .catalog-item:after {
+  box-shadow: 0 8px 17px 0 rgb(0, 0, 0, 20%), 0 6px 20px 0 rgb(0, 0, 0, 15%);
+} */
