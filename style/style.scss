@@ -1,0 +1,13 @@
+$light: #f8f9fa;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-family: 'Yusei Magic', sans-serif;
+  background-color: $light;
+}
