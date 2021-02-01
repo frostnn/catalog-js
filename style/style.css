@@ -7,11 +7,40 @@ body {
   padding: 0;
   line-height: 1.7;
   font-family: 'Baloo Paaji 2', cursive;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background: #d2d2d2;
+  padding: 25px 0;
+  margin-bottom: 40px;
+}
+
+.header_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_right-basket {
+  cursor: pointer;
+  color: #0a4870;
+}
+
+.header_right-basket .fa-shopping-cart {
+  /* padding-right: 15px; */
+}
+
+.header_right-basket .fa-shopping-cart:hover {
+  color: #f2620f;
+}
+
+.header_right-basket .fa-shopping-cart span {
+  padding-left: 4px;
 }
 
 .catalog-item {
   transition: transform 0.5s;
-  background-color: #f0f0f0;
+  background-color: #fff;
   color: #0a4870;
   border-radius: 5px;
   padding: 20px;
@@ -24,7 +53,7 @@ body {
 }
 
 .catalog-item_img {
-  height: 200px;
+  max-height: 200px;
 }
 
 .catalog-item_img img {
@@ -34,7 +63,7 @@ body {
 .catalog-item_title {
   margin: 30px 0;
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -45,12 +74,12 @@ body {
 }
 
 .catalog-item_wrapper-price .fas {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .catalog-item_price {
   color: #f2620f;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -119,6 +148,11 @@ body {
   height: 100%;
 }
 
+.draw-border:hover::before .active_btn,
+.draw-border:hover::after .active_btn {
+  border-color: #0a4870;
+}
+
 .draw-border:hover::before {
   transition-delay: 0s, 0s, 0.25s;
 }
@@ -135,7 +169,7 @@ body {
   padding: 0.75em 2em;
   letter-spacing: 0.05rem;
   margin: 1em;
-  width: 13rem;
+  max-width: 14rem;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
@@ -145,7 +179,28 @@ body {
   outline: none;
 }
 
-.catalog-item:after {
+.active_btn {
+  color: #f2620f;
+  border-color: #f2620f;
+  box-shadow: inset 0 0 0 3px #f2620f;
+}
+
+/* .catalog-item:after {
   box-shadow: 0 8px 17px 0 rgb(0, 0, 0, 20%), 0 6px 20px 0 rgb(0, 0, 0, 15%);
+} */
+.footer {
+  background: #d2d2d2;
+  padding: 80px;
+}
+
+@media (max-width: 1199px) {
+  .catalog-item_title {
+    font-size: 20px;
+  }
+  .catalog-item_wrapper-price {
+    flex-direction: column;
+    align-items: center;
+    justify-content: inset;
+  }
 }
 /*# sourceMappingURL=style.css.map */
