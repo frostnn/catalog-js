@@ -4,15 +4,18 @@ const render = () => {
   headerPage.render(productsStore.length);
   productsPage.render();
 };
+spinnerPage.render();
+
 let catalog = [];
-render();
 
 fetch('https://api.jsonbin.io/b/6018430eabdf9c55679648c8')
   .then((res) => res.json())
   .then((body) => {
     catalog = body;
+    spinnerPage.handlerClear();
     render();
   })
-  .catch((err) => {
-    console.log(err);
+  .catch(() => {
+    spinnerPage.handlerClear();
+    errorPage.render();
   });
